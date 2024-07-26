@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Champagne</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "iYjcMD1KXxW0X2K5f",
+        });
+    })();
+    </script>
 </head>
 <body>
     
@@ -139,7 +148,7 @@
                         <label for="body">Message:</label>
                         <textarea id="body" name="body" rows="5" required></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button onclick="sendMail()">Send</button>
                 </form>
             </div>
 
